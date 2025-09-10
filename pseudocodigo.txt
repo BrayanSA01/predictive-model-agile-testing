@@ -1,0 +1,36 @@
+INICIO
+
+1. Definir número total de registros (N).
+
+2. Definir listas de valores posibles para cada atributo:
+   - Tipo de prueba = {Funcional, No funcional}
+   - Metodología = {Ágil, Cascada}
+   - Fase = {Estática, Dinámica}
+   - Origen = {Manual, Automatizada}
+   - Complejidad = {Baja, Media, Alta, Crítica}
+   - Prioridad = {Baja, Media, Alta, Crítica}
+   - Resultado = {Aprobada, Fallida}
+
+3. Inicializar lista VACÍA para almacenar registros.
+
+4. Para i desde 1 hasta N, repetir:
+    4.1. Generar un identificador único del caso de prueba (ej. "TC000001").  
+    4.2. Seleccionar aleatoriamente un valor para cada atributo:
+         - Tipo de prueba
+         - Metodología
+         - Fase
+         - Origen
+         - Complejidad
+         - Prioridad
+    4.3. Determinar el resultado del caso de prueba:
+         - Asignar "Fallida" con mayor probabilidad si:
+              • Origen = Manual  
+              • Complejidad = Alta o Crítica  
+              • Prioridad = Alta o Crítica  
+         - En otros casos, asignar "Aprobada" con mayor probabilidad.
+    4.4. Crear un registro con todos los atributos seleccionados.
+    4.5. Agregar el registro a la lista.
+
+5. Guardar la lista de registros en un archivo (JSON o CSV).
+
+FIN
